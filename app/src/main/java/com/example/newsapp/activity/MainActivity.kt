@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.newsapp.NewService
+import com.example.newsapp.interfaceclass.NewService
 import com.example.newsapp.modalclass.News
 import com.example.newsapp.R
 import com.example.newsapp.adapter.NewsAdapter

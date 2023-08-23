@@ -1,4 +1,4 @@
-package com.example.newsapp
+package com.example.newsapp.interfaceclass
 
 import com.example.newsapp.modalclass.News
 import retrofit2.Call
