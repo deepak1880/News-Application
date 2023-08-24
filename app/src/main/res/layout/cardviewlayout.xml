@@ -48,7 +48,6 @@
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:padding="2dp"
             android:maxLines="2"
             android:ellipsize="end"
@@ -58,6 +57,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title"
             />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

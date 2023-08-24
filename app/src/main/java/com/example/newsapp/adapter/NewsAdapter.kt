@@ -17,10 +17,9 @@ class NewsAdapter(val context: Context, val articles: List<Article>) :
     var itemOnClick: ((Article) -> Unit)? = null
 
     class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-        var newimage = itemView.findViewById<ImageView>(R.id.image)
-        var newtitle = itemView.findViewById<TextView>(R.id.title)
-        var newdescription = itemView.findViewById<TextView>(R.id.description)
+        var newimage: ImageView = itemView.findViewById(R.id.image)
+        var newtitle: TextView = itemView.findViewById(R.id.title)
+        var newdescription: TextView = itemView.findViewById(R.id.description)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
@@ -36,7 +35,6 @@ class NewsAdapter(val context: Context, val articles: List<Article>) :
         val article = articles[position]
         holder.newtitle.text = article.title
         holder.newdescription.text = article.description
-
         holder.itemView.setOnClickListener {
             itemOnClick?.invoke(article)
         }
