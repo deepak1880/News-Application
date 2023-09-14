@@ -8,6 +8,7 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.example.newsapp.modalclass.Article
 import com.example.newsapp.R
+import com.example.newsapp.interfaceclass.NewService
 
 class NewsDisplayActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +32,8 @@ class NewsDisplayActivity : AppCompatActivity() {
         authorTextView.text = articles?.let{
             resources.getString(R.string.author,articles.author)
         } ?: "NA"
+
+        Log.d("Test-2", NewService.toString())
 
     }
 }

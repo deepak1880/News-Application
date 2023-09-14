@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<News>, response: Response<News>) {
                 val news = response.body()
                 if (news != null) {
-                    Log.d("OnResponse", news.toString())
+                    Log.d("Test-1", NewService.toString())
 
                     val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
                     recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)

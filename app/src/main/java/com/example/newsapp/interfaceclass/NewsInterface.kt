@@ -21,7 +21,6 @@ interface NewsInterface {
 
 object NewService {
     val newIntance: NewsInterface
-
     init {
         val retrofit: Retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
